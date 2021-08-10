@@ -1,0 +1,124 @@
+/*Variáveis de Cor*/
+:root{
+    --vermelho: #e50914;    
+    --preto: #141414;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Elementos Base*/
+body{
+   background: var(--preto);
+   font-family: 'Arial', Times, serif;
+   color: white;
+}
+
+header .container{
+    display: flex; /*alinha os elementos em linha*/
+    flex-direction: row; /*Define o flex como linha*/
+    align-items: center; /*alinha o conteúdo na vertical*/
+    justify-content: space-between;
+
+}
+/*Cor da logo*/
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial black', Times;
+    font-size: 40px;
+}
+
+/*Cor dos links*/
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/*Muda a cor dos links ao passar o mouse*/
+header nav a:hover{
+    color: #fff;
+}
+
+
+/* Filme Principal*/
+
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/capa-auto-da-compadecida.jpg');
+    
+    height: 600px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column; /*Coloca os elementos em coluna*/
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.filme-principal .titulo{
+    margin-top: 20%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    border-radius: 10px;
+
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+    transition: .3s ease all;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 30px;
+}
+
+.filme-principal .container{
+    width: 60%;
+}
+
+.titulo-itens{
+    margin-left: 30px;
+    padding: 10px 5px;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.box-filme:hover{
+    width: 120%;
+    height: 120%;
+}
+
+.carrosel-filme{
+    margin-top: 20px;
+}
